@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Harjoittelukenttä"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#00897B"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imgTrash"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:clickable="false"
+        android:onClick="onClick"
+        android:src="@drawable/nerdyman"
+        app:layout_constraintStart_toStartOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <ImageView
+        android:id="@+id/imgShock"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="25dp"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:onClick="onClick"
+        android:src="@drawable/gamer"
+        app:layout_constraintStart_toEndOf="@+id/imgTricky"
+        app:layout_constraintTop_toTopOf="@+id/imgTricky" />
+
+    <ImageView
+        android:id="@+id/imgTricky"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="25dp"
+        android:clickable="false"
+        android:onClick="onClick"
+        android:src="@drawable/girl"
+        app:layout_constraintStart_toEndOf="@+id/imgTrash"
+        app:layout_constraintTop_toTopOf="@+id/imgTrash" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        android:background="#D81B60"
+        android:text="Trash"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/imgTrash"
+        app:layout_constraintStart_toStartOf="@+id/imgTrash"
+        app:layout_constraintTop_toBottomOf="@+id/imgTrash" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="100dp"
+        android:layout_height="15dp"
+        android:text="Level 1"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/imgTrash"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="@+id/imgTrash"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000" />
+
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#43A047"
+        android:text="Idle"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/imgIdle"
+        app:layout_constraintStart_toStartOf="@+id/imgIdle"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="100dp"
+        android:layout_height="15dp"
+        android:text="Level 40"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/imgIdle"
+        app:layout_constraintStart_toStartOf="@+id/imgIdle"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        android:background="#FFB300"
+        android:text="Tricky"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/imgTricky"
+        app:layout_constraintStart_toStartOf="@+id/imgTricky"
+        app:layout_constraintTop_toBottomOf="@+id/imgTricky" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="100dp"
+        android:layout_height="15dp"
+        android:text="Level 12"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/imgTricky"
+        app:layout_constraintStart_toStartOf="@+id/imgTricky"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000" />
+
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:background="#E53935"
+        android:text="Trombi"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView22"
+        app:layout_constraintStart_toStartOf="@+id/textView22"
+        app:layout_constraintTop_toTopOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="100dp"
+        android:layout_height="15dp"
+        android:text="Level 57"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/imgTrombi"
+        app:layout_constraintStart_toStartOf="@+id/imgTrombi"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        android:background="#1E88E5"
+        android:text="Shock"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/imgShock"
+        app:layout_constraintStart_toStartOf="@+id/imgShock"
+        app:layout_constraintTop_toBottomOf="@+id/imgShock" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="100dp"
+        android:layout_height="15dp"
+        android:text="Level 24"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/imgShock"
+        app:layout_constraintStart_toStartOf="@+id/imgShock"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000" />
+
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:background="#3949AB"
+        android:text="Master"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/imgMaster"
+        app:layout_constraintStart_toStartOf="@+id/imgMaster"
+        app:layout_constraintTop_toTopOf="@+id/textView19" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="100dp"
+        android:layout_height="15dp"
+        android:text="Level 80"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/imgMaster"
+        app:layout_constraintStart_toStartOf="@+id/imgMaster"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <ImageView
+        android:id="@+id/imgIdle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="5dp"
+        android:clickable="false"
+        android:onClick="onClick"
+        android:src="@drawable/man"
+        app:layout_constraintEnd_toEndOf="@+id/imgTrash"
+        app:layout_constraintStart_toStartOf="@+id/imgTrash"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <ImageView
+        android:id="@+id/imgTrombi"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="5dp"
+        android:clickable="false"
+        android:onClick="onClick"
+        android:src="@drawable/woman"
+        app:layout_constraintEnd_toEndOf="@+id/imgTricky"
+        app:layout_constraintStart_toStartOf="@+id/imgTricky"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <ImageView
+        android:id="@+id/imgMaster"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="5dp"
+        android:clickable="false"
+        android:onClick="onClick"
+        android:src="@drawable/mysteriousman"
+        app:layout_constraintEnd_toEndOf="@+id/imgShock"
+        app:layout_constraintStart_toStartOf="@+id/imgShock"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Valitse lutemonisi, jota haluat harjoittaa:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/editTxtPickLutemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Anna lutemonisi nimi"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView14"
+        app:layout_constraintStart_toStartOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Valitse vastustajasi:\n(klikkaa kuvasta)"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtPickLutemon" />
+
+    <TextView
+        android:id="@+id/tViewSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:text="Trash"
+        android:textColor="#1B5E20"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/textView16"
+        app:layout_constraintStart_toEndOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtPickLutemon" />
+
+    <Button
+        android:id="@+id/btnToBattle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Harjoittelemaan!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgTrombi" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

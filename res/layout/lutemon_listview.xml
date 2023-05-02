@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayoutCompat"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="#6935E3"
+        android:text="Lempinimi"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textDirection="firstStrongRtl"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageLutemon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtType"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:text="tyyppi"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textDirection="firstStrongRtl"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtName"
+        app:layout_constraintStart_toStartOf="@+id/txtName"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+
+    <TextView
+        android:id="@+id/txtHP"
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:text="HP: 12/12"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textDirection="firstStrongRtl"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtName"
+        app:layout_constraintStart_toStartOf="@+id/txtName"
+        app:layout_constraintTop_toBottomOf="@+id/txtType" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="36dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="5dp"
+        android:text="Lv."
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtLvl"
+        app:layout_constraintStart_toEndOf="@+id/txtName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtLvl"
+        android:layout_width="78dp"
+        android:layout_height="46dp"
+        android:text="1001"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtName"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <ImageView
+        android:id="@+id/imgInfo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtLvl"
+        app:layout_constraintStart_toStartOf="@+id/txtLvl"
+        app:layout_constraintTop_toBottomOf="@+id/txtLvl"
+        app:srcCompat="@drawable/baseline_info_24" />
+
+    <ImageView
+        android:id="@+id/imageLutemon"
+        android:layout_width="116dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pienimusta" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

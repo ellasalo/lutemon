@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:foregroundTint="#43A047"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btnAddItem"
+        android:layout_width="138dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#43A047"
+        android:onClick="switchToLutemonAdding"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:shadowColor="#43A047"
+        android:text="Nappaa uusia lutemoneja"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvItems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:background="#FFFFFF"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/baseline_home_24"
+        app:layout_constraintEnd_toStartOf="@+id/btnHealSave"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnHealSave"
+        android:layout_width="138dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#00897B"
+        android:onClick="saveAndRest"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:text="Lepuuta oliot ja tallenna"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnAddItem"
+        app:layout_constraintTop_toTopOf="@+id/btnAddItem" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

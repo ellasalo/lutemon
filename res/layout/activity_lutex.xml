@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LutexActivity">
+
+    <View
+        android:id="@+id/nameBox"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:background="#98F8F8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="200dp"
+        android:layout_height="252dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txType"
+        app:srcCompat="@drawable/pienipinkki" />
+
+    <View
+        android:id="@+id/boxBox"
+        android:layout_width="349dp"
+        android:layout_height="304dp"
+        android:background="#98F8F8"
+        android:fadingEdge="horizontal|vertical"
+        android:radius="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+    <TextView
+        android:id="@+id/txLiikkeet"
+        android:layout_width="170dp"
+        android:layout_height="288dp"
+        android:background="#FBFBFB"
+        android:text="Liikkeet:"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/boxBox"
+        app:layout_constraintStart_toEndOf="@+id/txKuvaus"
+        app:layout_constraintTop_toTopOf="@+id/txKuvaus" />
+
+    <TextView
+        android:id="@+id/txKuvaus"
+        android:layout_width="148dp"
+        android:layout_height="287dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#FBFBFB"
+        android:text="Kuvaus:"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/boxBox"
+        app:layout_constraintTop_toTopOf="@+id/boxBox" />
+
+    <TextView
+        android:id="@+id/txName"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Undula &quot;Annukka&quot;"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oranssi"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/txName"
+        app:layout_constraintTop_toBottomOf="@+id/txName" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lv"
+        android:textColor="#050000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/txName"
+        app:layout_constraintTop_toTopOf="@+id/imageView10" />
+
+    <TextView
+        android:id="@+id/txLv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="#090000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/textView27"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <ImageView
+        android:id="@+id/delView"
+        android:layout_width="57dp"
+        android:layout_height="48dp"
+        android:onClick="onClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnReturnHome"
+        app:srcCompat="@drawable/baseline_delete_forever_24" />
+
+    <TextView
+        android:id="@+id/tViewDescription"
+        android:layout_width="139dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textColor="#070000"
+        app:layout_constraintBottom_toBottomOf="@+id/txKuvaus"
+        app:layout_constraintEnd_toEndOf="@+id/txKuvaus"
+        app:layout_constraintStart_toStartOf="@+id/txKuvaus"
+        app:layout_constraintTop_toTopOf="@+id/txKuvaus"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txStats"
+        android:layout_width="147dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="90dp"
+        android:text="TextView"
+        android:textColor="#040000"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintStart_toStartOf="@+id/txName" />
+
+    <TextView
+        android:id="@+id/txWinStats"
+        android:layout_width="149dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textColor="#040000"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintStart_toStartOf="@+id/txName" />
+
+    <Button
+        android:id="@+id/btnReturnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#98F8F8"
+        android:onClick="returnToGame"
+        android:text="Palaa kotiin"
+        android:textColor="#090000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtMove1"
+        android:layout_width="151dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textColor="#040000"
+        app:layout_constraintBottom_toBottomOf="@+id/txLiikkeet"
+        app:layout_constraintEnd_toEndOf="@+id/txLiikkeet"
+        app:layout_constraintStart_toStartOf="@+id/txLiikkeet"
+        app:layout_constraintTop_toTopOf="@+id/txLiikkeet"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtMove4"
+        android:layout_width="151dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="6dp"
+        android:text="TextView"
+        android:textColor="#040000"
+        app:layout_constraintBottom_toBottomOf="@+id/txLiikkeet"
+        app:layout_constraintEnd_toEndOf="@+id/txLiikkeet"
+        app:layout_constraintStart_toStartOf="@+id/txLiikkeet"
+        app:layout_constraintTop_toBottomOf="@+id/txtMove3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtMove2"
+        android:layout_width="151dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="6dp"
+        android:text="TextView"
+        android:textColor="#040000"
+        app:layout_constraintBottom_toBottomOf="@+id/txLiikkeet"
+        app:layout_constraintEnd_toEndOf="@+id/txLiikkeet"
+        app:layout_constraintStart_toStartOf="@+id/txLiikkeet"
+        app:layout_constraintTop_toBottomOf="@+id/txtMove1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtMove3"
+        android:layout_width="151dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="6dp"
+        android:text="TextView"
+        android:textColor="#040000"
+        app:layout_constraintBottom_toBottomOf="@+id/txLiikkeet"
+        app:layout_constraintEnd_toEndOf="@+id/txLiikkeet"
+        app:layout_constraintStart_toStartOf="@+id/txLiikkeet"
+        app:layout_constraintTop_toBottomOf="@+id/txtMove2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/vDelLutemon"
+        android:layout_width="302dp"
+        android:layout_height="134dp"
+        android:background="#FFFD8D"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/txDelLutemon"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:text="Haluatko varmasti luopua tästä lutemonista?"
+        android:textColor="#000000"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/vDelLutemon"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="@+id/vDelLutemon"
+        app:layout_constraintTop_toTopOf="@+id/vDelLutemon"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnDelYes"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:backgroundTint="#569F02"
+        android:onClick="deleteLutemon"
+        android:text="Kyllä"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/txDelLutemon"
+        app:layout_constraintTop_toTopOf="@+id/boxBox"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnDelNo"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#CA0303"
+        android:onClick="hideDeleteView"
+        android:text="En"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/txDelLutemon"
+        app:layout_constraintTop_toTopOf="@+id/btnDelYes"
+        tools:visibility="invisible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

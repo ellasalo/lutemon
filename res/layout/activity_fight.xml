@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#141843"
+    tools:context=".FightActivity">
+
+    <ImageView
+        android:id="@+id/imgBckround"
+        android:layout_width="501dp"
+        android:layout_height="311dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/taustatournament" />
+
+    <ImageView
+        android:id="@+id/imgOwn"
+        android:layout_width="140dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="10dp"
+        android:scaleX="-1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgOpponent"
+        app:srcCompat="@drawable/pienioranssi" />
+
+    <ImageView
+        android:id="@+id/imgOpponent"
+        android:layout_width="140dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pienivalkoinen" />
+
+    <ImageView
+        android:id="@+id/imgOwnEffect"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imgOwn"
+        app:layout_constraintEnd_toEndOf="@+id/imgOwn"
+        app:layout_constraintStart_toStartOf="@+id/imgOwn"
+        app:layout_constraintTop_toTopOf="@+id/imgOwn"
+        app:layout_constraintVertical_bias="0.46"
+        app:srcCompat="@drawable/starburst_explosion_2_1" />
+
+    <ImageView
+        android:id="@+id/imgOpponentEffect"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imgOpponent"
+        app:layout_constraintEnd_toEndOf="@+id/imgOpponent"
+        app:layout_constraintStart_toStartOf="@+id/imgOpponent"
+        app:layout_constraintTop_toTopOf="@+id/imgOpponent"
+        app:srcCompat="@drawable/starburst_explosion_2_1" />
+
+    <View
+        android:id="@+id/instructionView"
+        android:layout_width="411dp"
+        android:layout_height="90dp"
+        android:background="#020B22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBckround"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnMove2"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#1A237E"
+        android:text="Liike 2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnMove1" />
+
+    <Button
+        android:id="@+id/btnMove3"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#1A237E"
+        android:text="Liike 3"
+        app:layout_constraintStart_toStartOf="@+id/btnMove1"
+        app:layout_constraintTop_toBottomOf="@+id/btnMove1" />
+
+    <Button
+        android:id="@+id/btnMove4"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#1A237E"
+        android:text="Liike 4"
+        app:layout_constraintStart_toStartOf="@+id/btnMove2"
+        app:layout_constraintTop_toTopOf="@+id/btnMove3" />
+
+    <Button
+        android:id="@+id/btnMove1"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#00ACC1"
+        android:text="Liike 1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instructionView" />
+
+    <TextView
+        android:id="@+id/tViewInstructions"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="sans-serif"
+        android:text="Valitse liike:"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/instructionView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBckround" />
+
+    <LinearLayout
+        android:id="@+id/LLown"
+        android:layout_width="161dp"
+        android:layout_height="58dp"
+        android:background="#EA4F61"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/imgOwn"
+        app:layout_constraintStart_toStartOf="@+id/imgOwn">
+
+        <TextView
+            android:id="@+id/tViewOwnName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Annukka"
+            android:textColor="#101010"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tViewOwnLvl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Taso: 1"
+            android:textColor="#101010"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tViewOwnHP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="HP: 16/16"
+            android:textColor="#101010" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LLopponent"
+        android:layout_width="161dp"
+        android:layout_height="58dp"
+        android:background="#EA4F61"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/imgOpponent"
+        app:layout_constraintEnd_toEndOf="@+id/imgOpponent">
+
+        <TextView
+            android:id="@+id/tViewOpponentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Lutenatus Vexteus Maximus"
+            android:textColor="#101010"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tViewOpponentLvl"
+            android:layout_width="161dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Taso: 1"
+            android:textColor="#101010"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tViewOpponentHP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="HP 29/30"
+            android:textColor="#101010" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgContinue"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="70dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/instructionView"
+        app:layout_constraintEnd_toEndOf="@+id/instructionView"
+        app:layout_constraintTop_toBottomOf="@+id/imgBckround"
+        app:srcCompat="@drawable/baseline_play_arrow_24" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#04A30C"
+        android:onClick="fight"
+        android:text="Aloita taistelu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMove3"
+        tools:visibility="invisible" />
+
+    <View
+        android:id="@+id/viewGameEnd"
+        android:layout_width="305dp"
+        android:layout_height="317dp"
+        android:background="#F14242"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58000004"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tViewWin"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Voitit ottelun!"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="@+id/viewGameEnd"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/viewGameEnd"
+        app:layout_constraintTop_toTopOf="@+id/viewGameEnd"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tViewEarning"
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:text="Ansaitsit 180 XP\nSinulla on nyt 2291/2999 XP seuraavaan tasoon\nLutemonisi nousi tasolle 35!\nLutemonisi kehittyi!\nLutemonisi oppi uuden liikkeen!"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewGameEnd"
+        app:layout_constraintEnd_toEndOf="@+id/viewGameEnd"
+        app:layout_constraintStart_toStartOf="@+id/viewGameEnd"
+        app:layout_constraintTop_toBottomOf="@+id/tViewWin"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnReturn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="onClick"
+        android:text="Poistu treeniottelusta"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewGameEnd"
+        tools:visibility="invisible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
